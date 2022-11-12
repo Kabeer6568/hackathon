@@ -9,8 +9,14 @@
         /* border: 2px solid red; */
     }
   }
+@media (max-width: 300px) {
+    .logo {
+        width: 100%!important;
+        /* border: 2px solid red; */
+    }
+  }
 
-body{
+.body{
     background-color: rgb(241, 241, 241);
     /* background-image: linear-gradient(#defcb5, #c5e5fe); */
     font-family: Poppins;
@@ -58,3 +64,38 @@ body{
     border-color: #99CA3C;
     width: 100%;
 }
+
+
+
+
+/* admin page style */
+
+/* .body-admin{
+    /* background-color: rgb(246, 246, 246); */
+    
+/* } */ 
+
+
+.form-select:focus {
+    border-color: #8dc63f;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(141 198 63 / 32%);
+}
+
+
+.option-default{
+    color: rgb(179, 179, 179)!important;
+}
+
+.max_width{
+    max-width: 950px;
+    padding: 20px 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; 
+    
+}
+
+
+.header{
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+}
+
