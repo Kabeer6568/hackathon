@@ -29,7 +29,7 @@ signinBtn.addEventListener('click', ()=>{
         // Signed in 
         const user = userCredential.user;
         console.log("user", user);
-
+        
         window.location.href = "admin.html"
         // const docRef = doc(db, "users", user.uid);
         // const docSnap = await getDoc(docRef);
@@ -46,6 +46,9 @@ signinBtn.addEventListener('click', ()=>{
         // }
       })
       .catch((error) => {
+        swal("Email Or Password is Incorrect",{
+            icon: "error",
+          });
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log("ErrorMsg =>", errorMessage);
