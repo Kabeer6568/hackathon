@@ -74,74 +74,122 @@
             </div>
         </div>
     </div>
-<br>
-        <hr>
+    <br>
+    <hr>
 
-        <div class="d-flex justify-content-center align-items-center mt-5">
-            <div class="conatiner max_width">
-                <div class="add-data">
-                    <h2>Add Student Details: </h2>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="conatiner max_width">
+            <div class="add-data">
+                <h2>Add Student Details: </h2>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="studentName" placeholder="Enter Student Name">
                 </div>
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="studentName" placeholder="Enter Student Name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Father Name</label>
-                        <input type="text" class="form-control" id="fatherName" placeholder="Enter Student's Father Name">
-                        <!-- <select id="" class="form-select">
+                <div class="col-md-6">
+                    <label for="" class="form-label">Father Name</label>
+                    <input type="text" class="form-control" id="fatherName" placeholder="Enter Student's Father Name">
+                    <!-- <select id="" class="form-select">
                             <option selected disabled class="option-default">Select Class Timings</option>
                             <option>Sun</option>
                             <option>MWF</option>
                             <option>TTS</option>
                         </select> -->
 
-                    </div>
-                    <div class="col-6">
-                        <label for="" class="form-label">Roll Number</label>
-                        <input type="text" class="form-control" id="rollNumber" placeholder="Enter Roll Number">
-                    </div>
-                    <div class="col-6">
-                        <label for="" class="form-label">Contact Number</label>
-                        <input type="text" class="form-control" id="contactNumber" placeholder="Enter Contact Number">
-                    </div>
-                    <div class="col-6">
-                        <label for="" class="form-label">CNIC Number</label>
-                        <input type="text" class="form-control" id="cnicNumber" placeholder="Enter CNIC Number">
-                    </div>
-                    <div class="col-6">
-                        <label for="" class="form-label">Picture</label>
-                        <input type="file" accept="image/" class="form-control" id="imageUpload">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Course Name</label>
-                        <input type="text" class="form-control" id="courseNameStudent" placeholder="Enter Course Name">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="" class="form-label">Assign Class</label>
-                        <input type="text" class="form-control" id="assignClass" placeholder="Assign Class to Student">
-                        </select>
-                    </div>
-
-
-                    <div class="col-12">
-                        <button type="submit" id="studentDetails" class="btn btn-primary">Add Student Detalis</button>
-                    </div>
-                    </form>
                 </div>
+                <div class="col-6">
+                    <label for="" class="form-label">Roll Number</label>
+                    <input type="text" class="form-control" id="rollNumber" placeholder="Enter Roll Number">
+                </div>
+                <div class="col-6">
+                    <label for="" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="contactNumber" placeholder="Enter Contact Number">
+                </div>
+                <div class="col-6">
+                    <label for="" class="form-label">CNIC Number</label>
+                    <input type="text" class="form-control" id="cnicNumber" placeholder="Enter CNIC Number">
+                </div>
+                <div class="col-6">
+                    <label for="" class="form-label">Picture</label>
+                    <input type="file" accept="image/" class="form-control" id="imageUpload">
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">Course Name</label>
+                    <input type="text" class="form-control" id="courseNameStudent" placeholder="Enter Course Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="" class="form-label">Assign Class</label>
+                    <input type="text" class="form-control" id="assignClass" placeholder="Assign Class to Student">
+                    </select>
+                </div>
+
+
+                <div class="col-12">
+                    <button type="submit" id="studentDetails" class="btn btn-primary">Add Student Detalis</button>
+                </div>
+                </form>
             </div>
         </div>
+    </div>
+<div class="container">
+    <div class="add-data mb-5 mt-5">
+        <h2 style="text-align: center ;"> Show Student Data: </h2>
+    </div>
+    <table class="table table-striped">
+        <tr>
+            <th width="15%">Name</th>
+            <th width="15%">Father Name</th>
+            <th width="15%">Roll Number</th>
+            <th width="15%">Contact Number</th>
+            <th width="15%">CNIC Number</th>
+            <th width="15%">Course Name</th>
+        </tr>
+    </table>
+    <div class="table" id="table">
+</div>
 
+<button id="mainData" style="width:100%" class="btn btn-warning"> Show Student data</button>
+<div id="data"></div>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                crossorigin="anonymous"></script>
-            <!-- <script type="module" src="assets/js/app.js"></script> -->
-            <script type="module" src="assets/js/admin.js"></script>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="container">
+            <div class="row p-5">
+                <div class="add-data mb-5">
+                    <h2  style="text-align: center ;">Add Student Attendence: </h2>
+                </div>
+                <div class="col-md-6">
+                    <!-- <label for="scheduleClasses" class="form-label">Schedule of classes</label> -->
+                    <select id="scheduleClasses" class="form-select">
+                        <!-- <option selected disabled class="option-default">Select Attendence Status</option> -->
+                        <option selected>Present</option>
+                        <option>Absent</option>
+                        <option>Late</option>
+                        <option>Leave</option>
+                    </select>
 
-            <!-- sweet alert -->
-            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                </div>
+                <div class="col-md-6">
+                    <!-- <label for="" class="form-label">Assign Class</label> -->
+                    <input type="text" class="form-control" id="assignClass" placeholder="Enter Student Role NUmber">
+                    </select>
+                </div>
+                <div class="col-12 mt-3" >
+                    <button type="submit" style="width:100%" id="studentDetails" class="btn btn-primary">Show Student data</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- <script type="module" src="assets/js/app.js"></script> -->
+    <script type="module" src="assets/js/admin.js"></script>
+
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 
 </html>
